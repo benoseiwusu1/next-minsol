@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #edf2f7;
+  font-family: "Rubik";
+}
+
+@layer utilities {
+  .section-title {
+    @apply text-2xl md:text-4xl font-bold text-main mb-8;
+  }
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
