@@ -1,7 +1,7 @@
 // components/HeroSlider.tsx
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Link from "next/link";
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 
 const slides = [
   {
@@ -80,7 +80,7 @@ const HeroSlider: React.FC = () => {
             </h2>
             <p className="my-6 max-w-2xl text-lg">{slide.description}</p>
             <Link
-              to={slide.link}
+              href={slide.link}
               className="bg-transparent border-2 border-white px-4 py-2 rounded-md text-sm mt-8 items-center gap-x-1 font-bold hidden"
             >
               {slide.buttonText}

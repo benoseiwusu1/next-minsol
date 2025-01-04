@@ -1,6 +1,6 @@
 // components/Solutions.tsx
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const solutions = [
   {
@@ -63,7 +63,7 @@ const Solutions: React.FC<SolutionsProps> = ({ onSolutionClick }) => {
           {solutions.map((solution, index) => (
             <div
               key={index}
-              className="bg-blu rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-[350px]"
+              className="bg-main rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-[350px]"
             >
               <div className="h-[60%] w-full overflow-hidden">
                 <img
@@ -79,13 +79,12 @@ const Solutions: React.FC<SolutionsProps> = ({ onSolutionClick }) => {
                     {solution.description}
                   </p>
                 </div>
-                <Link
-                  to="#"
-                  className="mt-auto inline-block font-semibold border border-main px-4 py-2 rounded-lg text-sm text-white hover:bg-main transition-colors duration-150 text-center"
+                <button
+                  className="mt-auto inline-block font-semibold border border-white px-4 py-2 rounded-lg text-sm text-white hover:bg-main transition-colors duration-150 text-center"
                   onClick={() => onSolutionClick(solution)}
                 >
                   {solution.buttonText} &rarr;
-                </Link>
+                </button>
               </div>
             </div>
           ))}

@@ -1,8 +1,7 @@
 // components/News.tsx
 import React from "react";
-import { Link } from "react-router-dom";
 import NewsCard from "./NewsCard";
-import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 const newsItems = [
   {
@@ -31,14 +30,13 @@ const newsItems = [
 ];
 
 const News: React.FC = () => {
-  const { t } = useTranslation();
   return (
     <section className="py-8 bg-gray-100">
       <div className=" px-4 md:px-20 container mx-auto">
         <div className="flex justify-between items-center mb-8">
-          <h2 className="section-title">{t("News")}</h2>
+          <h2 className="section-title">{"News"}</h2>
           <Link
-            to="/newsroom"
+            href="/newsroom"
             className="text-secondary font-semibold flex items-center"
           >
             More &rarr;

@@ -1,6 +1,6 @@
 // components/NewsCard.tsx
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 interface NewsCardProps {
   title: string;
@@ -31,7 +31,7 @@ const NewsCard: React.FC<NewsCardProps> = ({
           <h3 className="text-lg font-semibold text-gray-800 mb-4">{title}</h3>
         </div>
         <Link
-          to={link}
+          href={`${link}`}
           className="text-secondary font-semibold mt-4 self-start"
         >
           More &rarr;
