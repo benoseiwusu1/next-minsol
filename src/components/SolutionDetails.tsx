@@ -19,7 +19,7 @@ const SolutionDetails: React.FC<Props> = ({ selectedItem: item }) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={(state) => !state && closeSheet()}>
-      <DialogContent className="sm:max-w-2xl p-8 text-white">
+      <DialogContent className="sm:max-w-2xl p-8 text-gray-800">
         <DialogHeader>
           <DialogTitle className="text-lg md:text-2xl">
             {item.title && item.title}

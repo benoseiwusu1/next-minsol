@@ -24,8 +24,6 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  console.log(openModal);
-
   return (
     <ModalContext.Provider
       value={{

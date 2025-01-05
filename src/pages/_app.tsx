@@ -8,6 +8,7 @@ import {
   QueryClientProvider,
   useQuery,
 } from "@tanstack/react-query";
+import ContactModal from "@/components/ContactModal";
 
 const client = new QueryClient();
 
@@ -18,6 +19,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <ModalProvider>
           <Navbar />
           <Component {...pageProps} />
+          <ContactModal />
           <Footer />
         </ModalProvider>
       </QueryClientProvider>
