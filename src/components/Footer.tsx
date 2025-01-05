@@ -1,8 +1,7 @@
 // components/Footer.tsx
 import React from "react";
 import { Icon } from "@iconify/react";
-import { Link } from "react-router-dom";
-
+import Link from "next/link";
 const footerLinks = {
   company: [
     { label: "Home", url: "/" },
@@ -41,7 +40,7 @@ const footerLinks = {
 const Footer: React.FC = () => (
   <footer className="bg-black text-white py-8 px-4 md:px-28">
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-      <Link to="/" className="md:w-full h-20">
+      <Link href="/" className="md:w-full h-20">
         <img
           src="/images/sol.png"
           className="w-full h-full object-cover"
@@ -55,7 +54,7 @@ const Footer: React.FC = () => (
           {footerLinks.company.map((link, index) => (
             <li key={index}>
               <Link
-                to={link.url}
+                href={link.url}
                 className="hover:text-gray-300 flex items-center"
               >
                 {link.label}{" "}
@@ -65,25 +64,6 @@ const Footer: React.FC = () => (
           ))}
         </ul>
       </div>
-
-      {/* <div>
-        <h3 className="text-lg font-semibold mb-4">Social Media</h3>
-        <ul className="space-y-2">
-          {footerLinks.socialMedia.map((link, index) => (
-            <li key={index}>
-              <a
-                href={link.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-gray-300 flex items-center"
-              >
-                <Icon icon={link.icon} width="20" className="mr-2" />{" "}
-                {link.label}
-              </a>
-            </li>
-          ))}
-        </ul>
-      </div> */}
 
       <div>
         <h3 className="text-lg font-semibold mb-4">Contact</h3>
@@ -100,7 +80,7 @@ const Footer: React.FC = () => (
       </div>
     </div>
     <div className="border-t border-gray-700 mt-8 pt-4 text-center text-sm text-gray-400">
-      © 2024 Minsol. All rights reserved.
+      © 2025 Minsol. All rights reserved.
     </div>
   </footer>
 );

@@ -6,6 +6,7 @@ import SolutionDetails from "@/components/SolutionDetails";
 import News from "@/components/News";
 import Pillars from "@/components/Pillars";
 import Clients from "@/components/Clients";
+import RssFeed from "@/components/RssFeed";
 
 export default function Home() {
   const { openSheet } = useModal();
@@ -20,7 +21,7 @@ export default function Home() {
       <HeroSlider />
       <Solutions onSolutionClick={handleDialogOpen} />
       <SolutionDetails selectedItem={selectedItem} />
-      <News />
+      <RssFeed />
       <Pillars />
       <Clients />
     </div>

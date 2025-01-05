@@ -50,7 +50,7 @@ const TabbedLayout: React.FC = () => {
               key={tab}
               className={`text-lg font-medium ${
                 selectedTab === tab
-                  ? "text-blue-800 border-b-2 border-blue-800"
+                  ? "text-main border-b-2 border-main"
                   : "text-gray-600"
               }`}
               onClick={() => setSelectedTab(tab)}

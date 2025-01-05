@@ -4,18 +4,21 @@ import Link from "next/link";
 
 interface NewsCardProps {
   title: string;
-  date: string;
-  category: string;
-  image: string;
+  date?: string;
+  category?: string;
+  imageUrl?: string;
   link: string;
+  contentSnippet?: string;
+  pubDate?: string;
 }
 
 const NewsCard: React.FC<NewsCardProps> = ({
   title,
   date,
   category,
-  image,
+  imageUrl: image,
   link,
+  contentSnippet,
 }) => {
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">

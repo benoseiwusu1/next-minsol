@@ -32,7 +32,7 @@ const Vision: React.FC = () => {
       </div>
 
       {/* Values Column */}
-      <div className="flex-1 bg-blu text-white w-full px-4 md:px-8 py-8">
+      <div className="flex-1 bg-main text-white w-full px-4 md:px-8 py-8">
         <h3 className="text-2xl mb-5">Our Values</h3>
         <div className="flex flex-col gap-y-8 text-[15px]">
           <div className="flex items-start gap-x-1">

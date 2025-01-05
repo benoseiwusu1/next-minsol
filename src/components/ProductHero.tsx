@@ -25,10 +25,10 @@ const ProductHero: React.FC<ProductsHeroProps> = ({
 
       {/* Content */}
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-16 lg:py-24">
-        <h1 className="text-white text-4xl md:text-6xl font-bold uppercase tracking-wide">
+        <h1 className="text-white text-4xl md:text-5xl font-bold uppercase tracking-wide">
           {title}
         </h1>
-        <p className="text-white text-lg md:text-xl mt-4 max-w-2xl">
+        <p className="text-white text-lg md:text-xl mt-4 max-w-lg">
           {subtitle}
         </p>
       </div>

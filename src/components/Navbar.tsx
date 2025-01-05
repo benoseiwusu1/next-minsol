@@ -45,7 +45,6 @@ const Navbar: React.FC = () => {
   const toggleDrawer = () => setIsDrawerOpen((prev) => !prev);
   const toggleDropdown = (index: number) =>
     setActiveDropdown(activeDropdown === index ? null : index);
-
   const handleButtonClick = () => {
     openModal();
     setIsMenuOpen(false);
@@ -91,7 +90,6 @@ const Navbar: React.FC = () => {
             ></div>
           )}
 
-          {/* Mobile Navigation Menu */}
           {isMenuOpen && (
             <div className="fixed top-0 right-0 w-[90%] h-full bg-main text-white z-50 p-6">
               <button
@@ -133,8 +131,6 @@ const Navbar: React.FC = () => {
           )}
         </div>
       </nav>
-
-      {/* Contact Modal */}
     </>
   );
 };

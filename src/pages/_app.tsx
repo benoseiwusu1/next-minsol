@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { ModalProvider } from "@/context/ModalContext";
 import "@/styles/globals.css";
@@ -9,6 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <ModalProvider>
         <Navbar />
         <Component {...pageProps} />
+        <Footer />
       </ModalProvider>
     </>
   );
