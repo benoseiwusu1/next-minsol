@@ -13,6 +13,7 @@ const links = [
   { label: "About Us", path: "/about" },
   { label: "Services", path: "/services" },
   { label: "Products", path: "/products" },
+  { label: "Newsroom", path: "/newsroom" },
 ];
 
 const Navbar: React.FC = () => {
@@ -42,7 +43,10 @@ const Navbar: React.FC = () => {
             <div className="hidden md:flex items-center space-x-8">
               {links.map((link, index) => (
                 <div key={index} className="relative">
-                  <Link href={link.path} className="hover:underline">
+                  <Link
+                    href={link.path}
+                    className="hover:underline font-medium"
+                  >
                     {link.label}
                   </Link>
                 </div>
