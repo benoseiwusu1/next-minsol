@@ -13,10 +13,8 @@ type FeedItem = {
 
 const fetchImageFromArticle = async (url: string): Promise<string | null> => {
   try {
-    const { data } = await axios.get(url);
+    const { data } = await axios.get(url, { maxRedirects: 5 });
     const $ = cheerio.load(data);
-
-    // Get Open Graph image or fallback to first <img>
     const ogImage = $('meta[property="og:image"]').attr("content");
     const firstImage = $("img").attr("src");
     return ogImage || firstImage || null;
@@ -25,7 +23,6 @@ const fetchImageFromArticle = async (url: string): Promise<string | null> => {
     return null;
   }
 };
-
 export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
