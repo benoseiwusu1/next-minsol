@@ -21,13 +21,9 @@ const fetchImageFromArticle = async (url: string): Promise<string | null> => {
         "User-Agent": USER_AGENT,
       },
     });
-
     const $ = cheerio.load(data);
-
-    // Get Open Graph image or fallback to the first <img>
     const ogImage = $('meta[property="og:image"]').attr("content");
     const firstImage = $("img").attr("src");
-
     return ogImage || firstImage || null;
   } catch (error) {
     console.error(`Failed to fetch image from ${url}:`, error);
@@ -43,7 +39,13 @@ export default async function handler(
   const feedUrl = "https://www.mining.com/feed";
 
   try {
-    const feed = await parser.parseURL(feedUrl);
+    const feedResponse = await axios.get(feedUrl, {
+      headers: {
+        "User-Agent": USER_AGENT,
+      },
+    });
+
+    const feed = await parser.parseString(feedResponse.data);
 
     const itemsWithImages = await Promise.all(
       feed.items.map(async (item) => {
