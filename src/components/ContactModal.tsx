@@ -52,7 +52,7 @@ const ContactModal: React.FC = () => {
 
   return (
     <Dialog open={isModalOpen} onOpenChange={closeModal}>
-      <DialogContent className="sm:max-w-[70%]">
+      <DialogContent className="sm:max-w-[70%] bg-body">
         <DialogTitle>Contact Us</DialogTitle>
         <div className="min-h-[60vh] flex items-center justify-center py-10 px-4 w-full">
           <div className="w-full max-w-4xl flex flex-col md:flex-row gap-6">
@@ -68,7 +68,7 @@ const ContactModal: React.FC = () => {
                       placeholder="Enter your name"
                       value={formData.name}
                       onChange={handleInputChange}
-                      className="focus:ring-main"
+                      className="focus:ring-main border-gray-700 border"
                     />
                   </div>
                   <div>
@@ -80,6 +80,7 @@ const ContactModal: React.FC = () => {
                       placeholder="Enter your email"
                       value={formData.email}
                       onChange={handleInputChange}
+                      className="focus:ring-main border-gray-700 border"
                     />
                   </div>
                 </div>
@@ -87,7 +88,7 @@ const ContactModal: React.FC = () => {
                 <div>
                   <Label htmlFor="service">Select a Service</Label>
                   <Select onValueChange={handleServiceChange}>
-                    <SelectTrigger>
+                    <SelectTrigger className="border border-gray-700">
                       <SelectValue placeholder="Choose a service" />
                     </SelectTrigger>
                     <SelectContent>
@@ -116,6 +117,7 @@ const ContactModal: React.FC = () => {
                     placeholder="Go ahead, we are listening..."
                     value={formData.message}
                     onChange={handleInputChange}
+                    className="focus:ring-main border-gray-700 border"
                   />
                 </div>
 

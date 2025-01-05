@@ -36,21 +36,21 @@ const About = () => {
       />
       <section className="pt-12 text-center">
         <div className="container mx-auto px-4 md:px-20">
-          <p className="max-w-full mx-auto md:text-left text-lg text-grey text-center">
+          <p className="max-w-full mx-auto md:text-left text-lg text-gray-700 text-center">
             Founded in 2010, Minsol Limited began as a pioneering Ghanaian firm
             with a vision to revolutionize mining consultancy and services
             across the Sub-Saharan region. From our headquarters in Accra,
             Ghana, we quickly established a reputation for excellence and
             innovation within the mining industry.
           </p>
-          <p className="max-w-full mx-auto md:text-left text-lg text-grey my-8 text-center">
+          <p className="max-w-full mx-auto md:text-left text-lg text-gray-700 my-8 text-center">
             Our commitment to growth and expansion led to the establishment of
             operational centers in Côte d'Ivoire, Burkina Faso, Mali, and
             Guinea. These strategic locations enable us to provide enhanced
             support to mining operations throughout the region and respond more
             effectively to our clients' evolving needs.
           </p>
-          <p className="max-w-full mx-auto md:text-left text-lg text-grey mb-20 text-center">
+          <p className="max-w-full mx-auto md:text-left text-lg text-gray-700 mb-20 text-center">
             At Minsol Limited, our approach is rooted in a commitment to
             delivering exceptional value and results for our clients. We combine
             industry expertise with innovative solutions to address the unique

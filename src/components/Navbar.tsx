@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <nav className="bg-white text-black py-4 relative">
+      <nav className="text-black py-4 relative">
         <div className="px-4 md:px-20 container mx-auto">
           <div className="flex justify-between items-center">
             <Link href="/" className="">

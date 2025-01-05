@@ -43,9 +43,9 @@ const Products = () => {
         <div>
           <div className="mb-10">
             <h2 className="capitalize text-2xl mb-4 text-main">
-              Installed ground support consumables
+              Ground support consumables
             </h2>
-            <p className="text-base max-w-3xl mx-auto text-grey">
+            <p className="text-base max-w-3xl mx-auto text-gray-700">
               We provide robust mining and ground support solutions, including
               high-quality welded mesh and split set products. Our welded mesh
               offers superior stability and reinforcement for underground mine
