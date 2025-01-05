@@ -29,21 +29,26 @@ const NewsCard: React.FC<NewsCardProps> = ({
       </div>
       <div className="flex flex-col justify-between p-4 h-full">
         <div>
-          <p className="text-sm text-gray-500 mb-1">
-            {categories?.slice(0, 1).map((cat, index) => (
-              <span key={index} className="">
-                {cat}
-              </span>
-            ))}
-          </p>
+          <div className="flex items-center mb-4 justify-between">
+            <p className="text-sm text-main">
+              {categories?.slice(0, 1).map((cat, index) => (
+                <span key={index} className="">
+                  {cat}
+                </span>
+              ))}
+            </p>
+            <span className="text-sm text-main">{date}</span>
+          </div>
+
           <h3 className="text-lg font-semibold text-gray-800 mb-4">{title}</h3>
         </div>
-        <Link
+        <a
           href={`${link}`}
+          target="_blank"
           className="text-secondary font-semibold mt-4 self-start"
         >
-          More &rarr;
-        </Link>
+          Read &rarr;
+        </a>
       </div>
     </div>
   );

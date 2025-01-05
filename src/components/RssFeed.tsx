@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import NewsCard from "./NewsCard";
+import { useQuery } from "@tanstack/react-query";
 import moment from "moment";
 import Link from "next/link";
+import NewsCard from "./NewsCard";
 import { NewsPlaceHolder } from "./NewsPlaceHolder";
 
 const formatDate = (dateString: string): string => {
@@ -17,43 +17,26 @@ type FeedItem = {
   imageUrl?: string;
 };
 
-// const SkeletonCard: React.FC = () => {
-//   return (
-//     <div className="animate-pulse bg-gray-200 rounded-lg shadow-md p-4">
-//       <div className="h-48 bg-gray-300 rounded mb-4"></div>
-//       <div className="h-6 bg-gray-300 rounded mb-2"></div>
-//       <div className="h-4 bg-gray-300 rounded w-3/4"></div>
-//     </div>
-//   );
-// };
+// Updated fetch function with proper typing
+const fetchRss = async (): Promise<FeedItem[]> => {
+  const response = await fetch("/api/rss");
+  if (!response.ok) {
+    throw new Error("Failed to fetch RSS feed");
+  }
+  return response.json();
+};
 
 export default function RssFeed() {
-  const [rssData, setRssData] = useState<FeedItem[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-
-  console.log(rssData);
-
-  useEffect(() => {
-    const fetchRss = async () => {
-      try {
-        setLoading(true);
-        const response = await fetch("/api/rss");
-        if (!response.ok) {
-          setLoading(false);
-          throw new Error("Failed to fetch RSS feed");
-        }
-        const data: FeedItem[] = await response.json();
-        setLoading(false);
-        setRssData(data);
-      } catch (err) {
-        setLoading(false);
-        setError((err as Error).message);
-      }
-    };
-
-    fetchRss();
-  }, []);
+  const {
+    data: rssData = [],
+    isLoading,
+    isError,
+    error,
+  } = useQuery<FeedItem[]>({
+    queryKey: ["rssFeed"], // React Query's key array for cache identity
+    queryFn: fetchRss, // Function to fetch data
+    staleTime: 1000 * 60 * 10, // Cache data for 10 minutes
+  });
 
   return (
     <section className="py-12">
@@ -67,9 +50,12 @@ export default function RssFeed() {
             More &rarr;
           </Link>
         </div>
-        {error ? (
-          <p style={{ color: "red", textAlign: "center" }}>Error: {error}</p>
-        ) : loading ? (
+
+        {isError ? (
+          <p style={{ color: "red", textAlign: "center" }}>
+            Error: {error?.message}
+          </p>
+        ) : isLoading ? (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {Array.from({ length: 3 }).map((_, index) => (
               <NewsPlaceHolder key={index} />
