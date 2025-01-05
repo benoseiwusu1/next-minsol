@@ -5,7 +5,7 @@ import Link from "next/link";
 interface NewsCardProps {
   title: string;
   date?: string;
-  category?: string;
+  categories?: string[];
   imageUrl?: string;
   link: string;
   contentSnippet?: string;
@@ -15,11 +15,12 @@ interface NewsCardProps {
 const NewsCard: React.FC<NewsCardProps> = ({
   title,
   date,
-  category,
+  categories,
   imageUrl: image,
   link,
   contentSnippet,
 }) => {
+  console.log(categories);
   return (
     <div className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
       <div className="relative group">
@@ -29,7 +30,11 @@ const NewsCard: React.FC<NewsCardProps> = ({
       <div className="flex flex-col justify-between p-4 h-full">
         <div>
           <p className="text-sm text-gray-500 mb-1">
-            {category} | {date}
+            {categories?.slice(0, 1).map((cat, index) => (
+              <span key={index} className="">
+                {cat}
+              </span>
+            ))}
           </p>
           <h3 className="text-lg font-semibold text-gray-800 mb-4">{title}</h3>
         </div>

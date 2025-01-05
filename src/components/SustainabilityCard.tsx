@@ -1,6 +1,6 @@
 // components/SustainabilityCard.tsx
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 interface SustainabilityCardProps {
   imageSrc: string;
@@ -37,7 +37,7 @@ const SustainabilityCard: React.FC<SustainabilityCardProps> = ({
           {title}
         </h2>
         <p className="text-grey mb-6 leading-relaxed">{description}</p>
-        <Link to={linkUrl}>
+        <Link href={linkUrl}>
           {/* <button className="bg-blu text-white py-2 px-6 rounded hover:bg-gray-800 transition capitalize">
             More information
           </button> */}
