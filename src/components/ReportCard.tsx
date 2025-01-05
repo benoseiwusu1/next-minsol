@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 interface ReportCardProps {
   title: string;
   link: string;
@@ -14,7 +14,7 @@ const ReportCard: React.FC<ReportCardProps> = ({ title, link }) => {
       </div>
       {/* View PDF Link */}
       <div className="mt-auto">
-        <Link to={link} className="text-orange-400 font-bold hover:underline">
+        <Link href={link} className="text-orange-400 font-bold hover:underline">
           VIEW PDF
         </Link>
       </div>

@@ -1,6 +1,6 @@
 import React from "react";
-import News from "./News";
 import Clients from "./Clients";
+import RssFeed from "./RssFeed";
 
 const GlobalPresence: React.FC = () => {
   return (
@@ -29,7 +29,7 @@ const GlobalPresence: React.FC = () => {
           </div>
         </div> */}
       </div>
-      <News />
+      <RssFeed />
       <Clients />
     </section>
   );

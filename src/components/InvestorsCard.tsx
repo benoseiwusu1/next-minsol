@@ -1,6 +1,6 @@
 // components/InvestorsCard.tsx
+import Link from "next/link";
 import React from "react";
-import { Link } from "react-router-dom";
 
 interface InvestorsCardProps {
   imageSrc: string;
@@ -39,7 +39,7 @@ const InvestorsCard: React.FC<InvestorsCardProps> = ({
         </h2>
         <p className="text-grey mb-6">{description}</p>
         <Link
-          to={linkUrl}
+          href={linkUrl}
           className="text-orange-500 font-semibold inline-flex items-center hover:underline capitalize"
         >
           More information &rarr;

@@ -1,6 +1,6 @@
 // components/Stats.tsx
 import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 interface StatCardProps {
   percentage: number;
@@ -35,7 +35,7 @@ const StatCard: React.FC<StatCardProps> = ({
       </div>
       <div className="mt-4">
         <Link
-          to={link}
+          href={link}
           className="text-orange-500 font-bold hover:underline inline-block"
         >
           How we do it →

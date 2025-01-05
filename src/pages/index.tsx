@@ -3,7 +3,6 @@ import Solutions from "@/components/Solutions";
 import { useState } from "react";
 import { useModal } from "@/context/ModalContext";
 import SolutionDetails from "@/components/SolutionDetails";
-import News from "@/components/News";
 import Pillars from "@/components/Pillars";
 import Clients from "@/components/Clients";
 import RssFeed from "@/components/RssFeed";
