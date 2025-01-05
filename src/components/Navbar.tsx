@@ -5,26 +5,6 @@ import SideDrawer from "./SideDrawer";
 import { useModal } from "@/context/ModalContext";
 import Link from "next/link";
 
-const dropdownData = [
-  {
-    title: "ME FIT Programs",
-    items: [
-      {
-        name: "ME FIT Grinding",
-        description:
-          "We offer integral and technical solutions to help our customers tackle the unique challenges at each mining operation and to positively impact priority KPIs: tons per hour, safety management, availability and maintainability of equipment, risk prevention, among others.",
-        link: "/solutions/me-fit-grinding",
-      },
-      {
-        name: "ME FIT Crushing",
-        description:
-          "We design solutions to help our customers achieve their goals by combining crusher wear parts with technology tools, advice, training and monitoring — all of which allow us to create value in our customers’ processes.",
-        link: "/solutions/me-fit-crushing",
-      },
-    ],
-  },
-];
-
 const links = [
   {
     label: "Home",
