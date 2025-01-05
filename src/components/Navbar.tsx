@@ -21,6 +21,7 @@ const Navbar: React.FC = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<number | null>(null);
   const { openModal } = useModal();
+  console.log(openModal);
 
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
   const toggleDrawer = () => setIsDrawerOpen((prev) => !prev);

@@ -33,9 +33,9 @@ export default function RssFeed() {
     isError,
     error,
   } = useQuery<FeedItem[]>({
-    queryKey: ["rssFeed"], // React Query's key array for cache identity
-    queryFn: fetchRss, // Function to fetch data
-    staleTime: 1000 * 60 * 10, // Cache data for 10 minutes
+    queryKey: ["rssFeed"],
+    queryFn: fetchRss,
+    staleTime: 1000 * 60 * 10,
   });
 
   return (

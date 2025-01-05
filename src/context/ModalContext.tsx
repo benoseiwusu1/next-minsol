@@ -6,7 +6,7 @@ interface ModalContextType {
   isModalOpen: boolean;
   openModal: () => void;
   closeModal: () => void;
-  isOpen: boolean; // for sheet
+  isOpen: boolean;
   openSheet: () => void;
   closeSheet: () => void;
 }
@@ -23,6 +23,8 @@ export const ModalProvider: React.FC<{ children: ReactNode }> = ({
   const closeSheet = () => setIsOpen(false);
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
+
+  console.log(openModal);
 
   return (
     <ModalContext.Provider
