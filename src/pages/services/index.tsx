@@ -1,4 +1,5 @@
 import Pillars from "@/components/Pillars";
+import Premier from "@/components/Premier";
 import ProductHero from "@/components/ProductHero";
 import RssFeed from "@/components/RssFeed";
 import SustainabilityCard from "@/components/SustainabilityCard";
@@ -71,8 +72,7 @@ const Services = () => {
           reverse={section.reverse}
         />
       ))}
-      <Pillars />
-      <RssFeed />
+      <Premier />
     </section>
   );
 };

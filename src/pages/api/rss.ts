@@ -36,7 +36,7 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const parser = new RSSParser<FeedItem>();
-  const feedUrl = "https://www.mining.com/feed";
+  const feedUrl = "https://www.mining.com/region/africa/feed";
 
   try {
     const feedResponse = await axios.get(feedUrl, {

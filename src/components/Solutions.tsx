@@ -30,24 +30,24 @@ const solutions = [
     buttonText: "More Information",
     image: "/images/train.jpg",
   },
-  // {
-  //   title: "Logistics and Transportation",
-  //   description:
-  //     "We offer comprehensive logistics and transportation services for the mineral processing industry, including supply chain",
-  //   details:
-  //     "We offer comprehensive logistics and transportation services for the mineral processing industry, including supply chain management, freight and shipping, transport planning, and fleet management. Our services also encompass the sourcing and delivery of mining and processing consumables, ensuring timely and cost-effective provision of essential materials and equipment while maintaining regulatory compliance and optimizing overall supply chain efficiency.",
-  //   buttonText: "More Information",
-  //   image: "/images/s3.png",
-  // },
   {
-    title: "Tenement Administration",
+    title: "Logistics and Transportation",
     description:
-      "Our expert tenement administration services ensure efficient and legally compliant management of mineral exploration",
+      "We offer comprehensive logistics and transportation services for the mineral processing industry, including supply chain",
     details:
       "We offer comprehensive logistics and transportation services for the mineral processing industry, including supply chain management, freight and shipping, transport planning, and fleet management. Our services also encompass the sourcing and delivery of mining and processing consumables, ensuring timely and cost-effective provision of essential materials and equipment while maintaining regulatory compliance and optimizing overall supply chain efficiency.",
     buttonText: "More Information",
-    image: "/images/tenet.jpg",
+    image: "/images/f2.jpg",
   },
+  // {
+  //   title: "Tenement Administration",
+  //   description:
+  //     "Our expert tenement administration services ensure efficient and legally compliant management of mineral exploration",
+  //   details:
+  //     "We provide meticulous oversight and administration of tenements, ensuring full compliance with legislative requirements and maintaining operational efficiency. We handle the preparation and lodgement of applications, renewals, and reductions for all exploration tenures. Our team consults closely with clients to tailor processes to specific needs.",
+  //   buttonText: "More Information",
+  //   image: "/images/tenet.jpg",
+  // },
 ];
 
 interface SolutionsProps {
@@ -59,13 +59,13 @@ const Solutions: React.FC<SolutionsProps> = ({ onSolutionClick }) => {
     <section className="py-16 bg-white">
       <div className="px-4 md:px-20 container mx-auto">
         <h2 className="section-title">Solutions</h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {solutions.map((solution, index) => (
             <div
               key={index}
-              className="bg-main rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-[350px]"
+              className="bg-main rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-[370px] w-full"
             >
-              <div className="h-[60%] w-full overflow-hidden">
+              <div className="h-[200px] w-full overflow-hidden">
                 <img
                   src={solution.image}
                   alt={solution.title}
