@@ -5,7 +5,7 @@ import React, { useState, useEffect } from "react";
 
 const slides = [
   {
-    image: "/images/banner1.jpg",
+    image: "/images/welcome.jpg",
     title: "Welcome to Minsol Limited",
     description:
       "Your premier partner in consultancy and logistics for the mineral resources industry. We specialize in providing innovative solutions across a broad spectrum of services",

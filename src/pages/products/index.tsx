@@ -27,6 +27,8 @@ const products = [
 
     description:
       "Minsol manufactures and supplies Mining Mesh (Welded Mesh) for permanent surface coverage in underground excavations. This mesh can be installed with roof bolts, split sets, or other supports, and used in conjunction with combi washers and straps to enhance protection against Falls of Ground (loose rocks) and improve safety for mining crews and underground machinery.",
+    description2:
+      "All mesh products from Minsol are manufactured to strict ISO quality standards to meet underground mining safety specifications. The mesh is available in lengths ranging from 1m to 4.5m and widths from 1m to 2.4m. The mesh is available with wire gauges of 5.6mm and 4mm, and a cost-saving option features a combination of 5.6mm diameter main wires and 4mm diameter cross wires.otection against Falls of Ground (loose rocks) and improve safety for mining crews and underground machinery.",
   },
 ];
 
@@ -60,6 +62,7 @@ const Products = () => {
                 image={product.image}
                 title={product.title}
                 description={product.description}
+                description2={product.description2}
               />
             ))}
           </div>

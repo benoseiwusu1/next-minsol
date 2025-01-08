@@ -1,4 +1,3 @@
-// File: components/ProductCard.tsx
 import React from "react";
 import {
   Dialog,
@@ -12,12 +11,14 @@ interface ProductCardProps {
   image: string;
   title: string;
   description?: string;
+  description2?: string;
 }
 
 const ProductCard: React.FC<ProductCardProps> = ({
   image,
   title,
   description,
+  description2,
 }) => {
   return (
     <div className="md:max-w-[300px] w-full bg-white shadow-md rounded-lg">
@@ -31,11 +32,11 @@ const ProductCard: React.FC<ProductCardProps> = ({
         <h3 className="text-lg font-bold mt-4">{title}</h3>
         <Dialog>
           <DialogTrigger asChild>
-            <button className="mt-4 px-4 py-2 bg-main text-white rounded-md ">
+            <button className="mt-4 px-4 py-2 bg-main text-white rounded-md">
               View Details
             </button>
           </DialogTrigger>
-          <DialogContent className="p-0 border-none max-w-[60%]">
+          <DialogContent className="p-0 border-none max-w-[80%]">
             <div className="bg-white border-none max-w-full w-full h-auto p-10 rounded-xl flex items-center gap-6">
               <DialogHeader className="w-4/6">
                 <div className="h-[350px] w-[400px]">
@@ -46,9 +47,19 @@ const ProductCard: React.FC<ProductCardProps> = ({
                   />
                 </div>
               </DialogHeader>
-              <div>
+              <div
+                className="h-[350px] overflow-y-auto"
+                style={{
+                  maxHeight: "350px",
+                  overflowY: "auto", // Scrollbar only when content overflows
+                  overflowX: "hidden",
+                }}
+              >
                 <h3 className="font-bold text-2xl">{title}</h3>
                 <p className="text-grey mt-3">{description}</p>
+                {description2 && (
+                  <p className="text-grey mt-3">{description2}</p>
+                )}
               </div>
             </div>
           </DialogContent>
