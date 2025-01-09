@@ -36,7 +36,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
               View Details
             </button>
           </DialogTrigger>
-          <DialogContent className="p-0 border-none max-w-[80%]">
+          <DialogContent className="p-0 border-none max-w-[80%] ">
             <div className="bg-white border-none max-w-full w-full h-auto p-10 rounded-xl flex items-center gap-6">
               <DialogHeader className="w-4/6">
                 <div className="h-[350px] w-[400px]">
