@@ -28,7 +28,7 @@ const sections = [
     imageSrc: "/images/manu.jpg",
     title: "Manufacturing and Distribution",
     description:
-      "Our expert tenement administration services ensure efficient and legally compliant management of mineral exploration. We provide meticulous oversight and administration of tenements, ensuring full compliance with legislative requirements and maintaining operational efficiency. We handle the preparation and lodgement of applications, renewals, and reductions for all exploration tenures. Our team consults closely with clients to tailor processes to specific needs",
+      "A wide range of high-quality products, from ground support systems and mill liners to grinding media and steel products. Tailored design, fabrication, casting, and machining solutions for custom foundry needs.",
     linkUrl: "#",
     bgColor: "bg-gray-100",
     reverse: false,

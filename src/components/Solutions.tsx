@@ -37,7 +37,7 @@ const solutions = [
     details:
       "We offer comprehensive logistics and transportation services for the mineral processing industry, including supply chain management, freight and shipping, transport planning, and fleet management. Our services also encompass the sourcing and delivery of mining and processing consumables, ensuring timely and cost-effective provision of essential materials and equipment while maintaining regulatory compliance and optimizing overall supply chain efficiency.",
     buttonText: "More Information",
-    image: "/images/f2.jpg",
+    image: "/images/f1.jpg",
   },
   // {
   //   title: "Tenement Administration",
@@ -74,7 +74,7 @@ const Solutions: React.FC<SolutionsProps> = ({ onSolutionClick }) => {
               </div>
               <div className="flex flex-col justify-between p-4 text-white h-full">
                 <div>
-                  <h3 className="text-base font-bold mb-2">{solution.title}</h3>
+                  <h3 className="text-lg font-bold mb-2">{solution.title}</h3>
                   <p className="mb-4 text-sm text-gray-300">
                     {solution.description}
                   </p>
