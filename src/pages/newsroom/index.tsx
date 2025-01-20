@@ -1,8 +1,7 @@
 import ProductHero from "@/components/ProductHero";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import NewsCard from "../../components/NewsCard";
 import moment from "moment";
-import Link from "next/link";
 import { NewsPlaceHolder } from "../../components/NewsPlaceHolder";
 import { useQuery } from "@tanstack/react-query";
 
@@ -19,7 +18,6 @@ type FeedItem = {
   imageUrl?: string;
 };
 
-// Updated fetch function with proper typing
 const fetchRss = async (): Promise<FeedItem[]> => {
   const response = await fetch("/api/rss");
   if (!response.ok) {
@@ -59,7 +57,7 @@ const NewsRoom = () => {
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {rssData.slice(0, 12).map((item, index) => (
+            {rssData.slice().map((item, index) => (
               <NewsCard
                 key={index}
                 title={item.title}
