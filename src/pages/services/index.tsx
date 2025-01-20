@@ -59,7 +59,7 @@ const Services = () => {
       <ProductHero
         title="Our services"
         subtitle="Expert solutions tailored to meet your needs."
-        backgroundImage="/images/gr.jpg"
+        backgroundImage="/images/align1.jpg"
       />
       {sections.map((section, index) => (
         <SustainabilityCard

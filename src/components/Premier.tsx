@@ -53,7 +53,7 @@ const Premier: React.FC = () => {
     <section
       className="relative bg-fixed bg-center bg-cover h-auto text-white"
       style={{
-        backgroundImage: `url('/images/gr.jpg')`,
+        backgroundImage: `url('/images/align1.jpg')`,
       }}
     >
       <div className="absolute inset-0 bg-black/70"></div>
