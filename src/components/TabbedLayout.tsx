@@ -54,15 +54,14 @@ const committees: Committees = {
       position: "Operations & Finance Executive Logistics",
     },
   ],
-  Administration: [
-    { name: "Carlos F. Cáceres Contreras", position: "President" },
-    { name: "Cristóbal Eyzaguirre Baeza", position: "Vicepresident" },
-    { name: "Alfonso Swett Saavedra", position: "Director" },
-    { name: "Alfonso Swett Saavedra", position: "Director" },
-    { name: "Fernando Franke García", position: "Director" },
-    { name: "Rolando Medeiros Soux", position: "Board Advisor" },
-  ],
-  // Add more committees as needed
+  // Administration: [
+  //   { name: "Carlos F. Cáceres Contreras", position: "President" },
+  //   { name: "Cristóbal Eyzaguirre Baeza", position: "Vicepresident" },
+  //   { name: "Alfonso Swett Saavedra", position: "Director" },
+  //   { name: "Alfonso Swett Saavedra", position: "Director" },
+  //   { name: "Fernando Franke García", position: "Director" },
+  //   { name: "Rolando Medeiros Soux", position: "Board Advisor" },
+  // ],
 };
 
 const TabbedLayout: React.FC = () => {
