@@ -39,7 +39,7 @@ export default function RssFeed() {
   });
 
   return (
-    <section className="py-12">
+    <section className="py-12 bg-white">
       <div className="container mx-auto px-4 md:px-20">
         <div className="flex justify-between items-center mb-8">
           <h2 className="section-title">{"News"}</h2>

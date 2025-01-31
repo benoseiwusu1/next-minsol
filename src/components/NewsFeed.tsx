@@ -2,7 +2,6 @@ import React from "react";
 import useRssFeed from "../hooks/useRssFeed";
 
 const NewsFeed: React.FC = () => {
-  // Replace with the actual mining.com feed URL
   const feedUrl = "https://www.mining.com/feed";
 
   const { feed, error, loading } = useRssFeed(feedUrl);
