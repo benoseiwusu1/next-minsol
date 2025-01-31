@@ -4,6 +4,7 @@ import Card from "./Card";
 type Member = {
   name: string;
   position: string;
+  details?: string;
 };
 
 type Committees = {
@@ -11,9 +12,19 @@ type Committees = {
 };
 
 const committees: Committees = {
-  "Board of Directors": [
-    { name: "Baltazar Sánchez Guzmán", position: "President" },
-    { name: "Cristóbal Eyzaguirre Baeza", position: "Vicepresident" },
+  "Senior Management": [
+    {
+      name: "Yaw Boadi",
+      position: "Managing Director",
+      details:
+        "Yaw is the founder and managing director of Minsol Limited, a mining services firm specializing in the West African region. He has a degree in metallurgical engineering from the Kwame Nkrumah University of Science and Technology. With a wealth of experience exceeding 30 years, Mr. Boadi has navigated various facets of the mining business ranging from managing operations, projects regulatory, to business development. His journey has led to the establishment of important connections with government and corporate stakeholders.",
+    },
+    {
+      name: "Theo Abuah",
+      position: "Head of Operations",
+      details:
+        "Mr Abuah is a Mining and Mineral Engineer by profession with over 30yrs experience in the mineral industry.  Theo holds a MSc (mining), Dip (Mineral Technology) and Certificate in Project Management. He has worked with Goldfields Gh Ltd, AngloGold Ashanti Bibiani mine; currently Mensin Gold (a subsidiary of Asante gold). A member of the Minsol team since 2015, Theo has assisted and led multinational companies as their representative in Ghana and West Africa. Some notable examples include: Polycorp (Canada), Gekko System (Australia) and West African Forging Ltd. He is currently assisting with business development post-establishment of West Africa Conveyor Ltd (WACO); the only indigenous conveyor and Underground Support System manufacturer.",
+    },
     { name: "Carlos F. Cáceres Contreras", position: "Director" },
     { name: "Alfonso A. Swett Opazo", position: "Director" },
     { name: "José Ignacio Figueroa Elgueta", position: "Director" },
