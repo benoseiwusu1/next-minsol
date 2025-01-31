@@ -56,7 +56,7 @@ interface SolutionsProps {
 
 const Solutions: React.FC<SolutionsProps> = ({ onSolutionClick }) => {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16">
       <div className="px-4 md:px-20 container mx-auto">
         <h2 className="section-title">Solutions</h2>
         <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

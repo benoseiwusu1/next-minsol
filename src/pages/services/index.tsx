@@ -12,7 +12,7 @@ const sections = [
     description:
       "We specialize in delivering end-to-end technical and engineering services for mineral processing, including feasibility studies, process design, and optimization. Our comprehensive offerings cover equipment procurement, from sourcing and supplier management to contract negotiation, as well as construction management services, ensuring effective site management, equipment installation, and budget control. We oversee commissioning and provide ongoing support to ensure efficient, safe, and compliant operations throughout the lifecycle of your project, enhancing performance and meeting all regulatory standards",
     linkUrl: "#",
-    bgColor: "bg-gray-100",
+    bgColor: "bg-none",
     reverse: false,
   },
   {
@@ -30,7 +30,7 @@ const sections = [
     description:
       "A wide range of high-quality products, from ground support systems and mill liners to grinding media and steel products. Tailored design, fabrication, casting, and machining solutions for custom foundry needs.",
     linkUrl: "#",
-    bgColor: "bg-gray-100",
+    bgColor: "bg-none",
     reverse: false,
   },
   {
@@ -48,7 +48,7 @@ const sections = [
     description:
       "We offer comprehensive logistics and transportation services for the mineral processing industry, including supply chain management, freight and shipping, transport planning, and fleet management. Our services also encompass the sourcing and delivery of mining and processing consumables, ensuring timely and cost-effective provision of essential materials and equipment while maintaining regulatory compliance and optimizing overall supply chain efficiency.",
     linkUrl: "#",
-    bgColor: "bg-gray-100",
+    bgColor: "bg-none",
     reverse: false,
   },
 ];
