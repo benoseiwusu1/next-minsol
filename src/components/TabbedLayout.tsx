@@ -68,10 +68,9 @@ const TabbedLayout: React.FC = () => {
   const [selectedTab, setSelectedTab] = useState<string>("Senior Management");
 
   return (
-    <section className="py-8 h-[70vh] mb-40 md:mb-0">
-      <div className="container mx-auto px-4  md:px-20">
-        {/* Tabs */}
-        <div className="flex space-x-4 mb-6 border-b border-gray-300 pb-2">
+    <section className="py-8 h-[70vh] mb-40 md:mb-0 flex">
+      <div className="container mx-auto px-4 md:px-20 flex flex-col justify-between">
+        <div className="flex space-x-4 mb-6 border-b border-gray-300 pb-2 items-center">
           {Object.keys(committees).map((tab) => (
             <button
               key={tab}
@@ -92,6 +91,7 @@ const TabbedLayout: React.FC = () => {
             <Card key={member.name} member={member} />
           ))}
         </div>
+        <div className="opacity-0">je</div>
       </div>
     </section>
   );
