@@ -1,4 +1,3 @@
-// components/InvestorsCard.tsx
 import Link from "next/link";
 import React from "react";
 
@@ -7,8 +6,8 @@ interface InvestorsCardProps {
   title: string;
   description: string;
   linkUrl: string;
-  bgColor?: string; // Optional background color
-  reverse?: boolean; // Optional reverse layout
+  bgColor?: string;
+  reverse?: boolean;
 }
 
 const InvestorsCard: React.FC<InvestorsCardProps> = ({
