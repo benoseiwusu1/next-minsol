@@ -17,7 +17,6 @@ type FeedItem = {
   imageUrl?: string;
 };
 
-// Updated fetch function with proper typing
 const fetchRss = async (): Promise<FeedItem[]> => {
   const response = await fetch("/api/rss");
   if (!response.ok) {
