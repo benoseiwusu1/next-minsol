@@ -1,4 +1,3 @@
-// components/Consultant.tsx
 import React from "react";
 import { useModal } from "../context/ModalContext";
 

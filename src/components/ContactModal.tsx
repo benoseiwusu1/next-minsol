@@ -56,7 +56,6 @@ const ContactModal: React.FC = () => {
         <DialogTitle>Contact Us</DialogTitle>
         <div className="min-h-[60vh] flex items-center justify-center py-10 px-4 w-full">
           <div className="w-full max-w-4xl flex flex-col md:flex-row gap-6">
-            {/* Contact Form */}
             <div className="md:w-4/6">
               <form onSubmit={handleSubmit} className="space-y-4">
                 <div className="grid grid-cols-2 gap-x-4">
@@ -130,7 +129,6 @@ const ContactModal: React.FC = () => {
               </form>
             </div>
 
-            {/* Contact Details */}
             <Card className="md:w-2/6 bg-main text-white">
               <CardHeader>
                 <CardTitle>Contact Details</CardTitle>
