@@ -1,4 +1,3 @@
-// components/Footer.tsx
 import React from "react";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
@@ -8,7 +7,6 @@ const footerLinks = {
     { label: "About Us", url: "/about" },
     { label: "Services", url: "/services" },
     { label: "Products", url: "/products" },
-    // { label: "Contact", url: "/contact" },
   ],
   socialMedia: [
     {

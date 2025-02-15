@@ -1,4 +1,3 @@
-// components/HeroSlider.tsx
 import { Icon } from "@iconify/react/dist/iconify.js";
 import Link from "next/link";
 import React, { useState, useEffect } from "react";
@@ -56,7 +55,6 @@ const HeroSlider: React.FC = () => {
     setCurrentSlide(index);
     setIsManual(true);
 
-    // Reset isManual to allow auto-slide after 5 seconds
     setTimeout(() => setIsManual(false), 10000);
   };
 
@@ -90,7 +88,6 @@ const HeroSlider: React.FC = () => {
         </div>
       ))}
 
-      {/* Indicators */}
       <div className="absolute bottom-5 left-1/2 transform -translate-x-1/2 flex space-x-2 z-20">
         {slides.map((_, index) => (
           <button
