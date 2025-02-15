@@ -1,4 +1,3 @@
-// components/ExperienceCard.tsx
 import React from "react";
 
 interface ExperienceCardProps {
