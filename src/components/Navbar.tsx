@@ -1,4 +1,3 @@
-// components/Navbar.tsx
 import React, { useState } from "react";
 import { Icon } from "@iconify/react";
 import SideDrawer from "./SideDrawer";
@@ -65,13 +64,11 @@ const Navbar: React.FC = () => {
               Contact Us
             </button>
 
-            {/* Mobile Menu Button */}
             <button className="block md:hidden text-3xl" onClick={toggleMenu}>
               <Icon icon={isMenuOpen ? "mdi:close" : "mdi:menu"} width="24" />
             </button>
           </div>
 
-          {/* Mobile Overlay */}
           {isMenuOpen && (
             <div
               className="fixed inset-0 z-40 bg-black bg-opacity-50"
@@ -112,7 +109,6 @@ const Navbar: React.FC = () => {
             </div>
           )}
 
-          {/* Desktop Side Drawer */}
           {isDrawerOpen && (
             <div className="hidden md:block">
               <SideDrawer closeDrawer={toggleDrawer} />
