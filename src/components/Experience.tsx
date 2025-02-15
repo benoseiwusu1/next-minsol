@@ -1,30 +1,5 @@
-// components/Experience.tsx
 import React from "react";
 import ExperienceCard from "./ExperienceCard";
-
-// const experiences = [
-//   {
-//     image: "/images/e1.jpg",
-//     title:
-//       "ME Elecmetal’s ME PolyLight Design Reduces Wear Rate in SAG Mill Discharge Lifters by 17%",
-//     linkText: "More",
-//     linkUrl: "#",
-//   },
-//   {
-//     image: "/images/e2.jpg",
-//     title:
-//       "Valley Forge Ridgeback® bolts improve discharge end tension in SAG mills by 11%",
-//     linkText: "More",
-//     linkUrl: "#",
-//   },
-//   {
-//     image: "/images/e3.jpg",
-//     title:
-//       "ME Elecmetal’s Heavy Duty Liner Application Increases 1250 Tower Mill’s Availability by 50%",
-//     linkText: "More",
-//     linkUrl: "#",
-//   },
-// ];
 
 const chemicals = [
   {
@@ -62,7 +37,6 @@ const Experience: React.FC = () => {
             />
           ))}
         </div>
-        {/* <SplitTable /> */}
       </div>
     </section>
   );
