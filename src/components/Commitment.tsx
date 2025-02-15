@@ -1,11 +1,9 @@
-// components/Commitment.tsx
 import React from "react";
 
 const Commitment: React.FC = () => {
   return (
     <section className="py-12 px-4 md:px-28 bg-white">
       <div className="flex flex-col md:flex-row items-center gap-8">
-        {/* Left Content */}
         <div className="md:w-1/2">
           <h1 className="text-3xl md:text-4xl font-bold mb-6">
             ME Elecmetal's Commitment to Sustainability
@@ -37,10 +35,9 @@ const Commitment: React.FC = () => {
           </ul>
         </div>
 
-        {/* Right Graphic */}
         <div className="md:w-1/2 relative">
           <img
-            src="/images/commit.png" // Replace with the puzzle graphic image URL
+            src="/images/commit.png"
             alt="Sustainability Graphic"
             className="w-full h-auto"
           />
