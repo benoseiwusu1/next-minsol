@@ -1,5 +1,4 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
-import Link from "next/link";
 import React from "react";
 
 interface SubtextItem {

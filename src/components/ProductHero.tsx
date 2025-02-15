@@ -18,13 +18,11 @@ const ProductHero: React.FC<ProductsHeroProps> = ({
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundAttachment: "fixed", // Parallax effect
+        backgroundAttachment: "fixed",
       }}
     >
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black opacity-75"></div>
 
-      {/* Content */}
       <div className="relative z-10 flex flex-col items-center px-6 py-16 lg:py-24">
         <h1 className="text-white text-4xl md:text-5xl font-bold uppercase tracking-wide">
           {title}

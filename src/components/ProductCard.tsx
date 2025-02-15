@@ -51,7 +51,7 @@ const ProductCard: React.FC<ProductCardProps> = ({
                 className="h-[350px] overflow-y-auto"
                 style={{
                   maxHeight: "350px",
-                  overflowY: "auto", // Scrollbar only when content overflows
+                  overflowY: "auto",
                   overflowX: "hidden",
                 }}
               >
