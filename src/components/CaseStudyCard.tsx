@@ -1,4 +1,3 @@
-// components/CaseStudyCard.tsx
 import React from "react";
 
 interface CaseStudyCardProps {
@@ -8,12 +7,7 @@ interface CaseStudyCardProps {
   link: string;
 }
 
-const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
-  image,
-  title,
-  // description,
-  // link,
-}) => {
+const CaseStudyCard: React.FC<CaseStudyCardProps> = ({ image, title }) => {
   return (
     <div className="bg-white shadow-md rounded-md overflow-hidden flex flex-col w-full lg:w-[350px]">
       <div className="h-40 overflow-hidden">
@@ -27,7 +21,6 @@ const CaseStudyCard: React.FC<CaseStudyCardProps> = ({
         <h3 className="text-base font-semibold text-blu mb-2 capitalize">
           {title}
         </h3>
-        {/* <p className="text-grey text-sm flex-1">{description}</p> */}
       </div>
     </div>
   );
