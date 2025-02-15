@@ -1,4 +1,3 @@
-// components/FlexCard.tsx
 import React from "react";
 
 interface FlexCardProps {
@@ -7,8 +6,8 @@ interface FlexCardProps {
   description: string;
   linkText: string;
   linkUrl: string;
-  bgColor?: string; // Optional background color
-  reverse?: boolean; // Optional reverse layout
+  bgColor?: string;
+  reverse?: boolean;
 }
 
 const FlexCard: React.FC<FlexCardProps> = ({
