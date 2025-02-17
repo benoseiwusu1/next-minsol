@@ -32,7 +32,7 @@ const About = () => {
       <ProductHero
         title="About Us"
         subtitle="Committed to Innovation, Quality, and Customer Satisfaction"
-        backgroundImage="/images/tenet.jpg"
+        backgroundImage="/images/aboutus.jpeg"
       />
       <section className="pt-12 text-center">
         <div className="container mx-auto px-4 md:px-20">
