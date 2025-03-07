@@ -4,6 +4,7 @@ import RssFeed from "@/components/RssFeed";
 import TabbedLayout from "@/components/TabbedLayout";
 import Vision from "@/components/Vision";
 import React from "react";
+import Head from "next/head";
 
 const stats = [
   {
@@ -29,6 +30,43 @@ const stats = [
 const About = () => {
   return (
     <section>
+      <Head>
+        <title>About Minsol Limited - Experts in Mining & Logistics</title>
+        <meta
+          name="description"
+          content="Learn more about Minsol Limited, a leading mining consultancy and logistics company in Ghana. We provide expert solutions for mineral exploration and supply chain management."
+        />
+        <meta
+          name="keywords"
+          content="About Minsol Limited, Mining consultancy Ghana, Logistics services, Mineral exploration, Mining experts"
+        />
+        <meta name="author" content="Minsol Limited" />
+
+        {/* Open Graph / Facebook Meta Tags */}
+        <meta
+          property="og:title"
+          content="About Minsol Limited - Experts in Mining & Logistics"
+        />
+        <meta
+          property="og:description"
+          content="Learn about Minsol Limited's expertise in mining consultancy and logistics, serving Ghana and beyond."
+        />
+        <meta property="og:image" content="/public/minsol-about.jpg" />
+        <meta property="og:url" content="https://www.minsolltd.com/about" />
+        <meta property="og:type" content="website" />
+
+        {/* Twitter Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="About Minsol Limited - Experts in Mining & Logistics"
+        />
+        <meta
+          name="twitter:description"
+          content="Discover Minsol Limited's role as a leader in mining consultancy and logistics."
+        />
+        <meta name="twitter:image" content="/public/minsol-about.jpg" />
+      </Head>
       <ProductHero
         title="About Us"
         subtitle="Committed to Innovation, Quality, and Customer Satisfaction"
